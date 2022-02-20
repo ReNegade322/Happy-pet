@@ -27,4 +27,48 @@
 .header__navigation{
     font-size: 15px;
     font-weight: 400;
+    color: black;
+}
+
+.hero__title{
+    padding-top: 283px;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 24px;
+    line-height: 49px;
+}
+
+.hero__description{
+    max-width: 413px;
+    width: 100%;
+    font-size: 19px;
+    line-height: 27px;
+    font-weight: 400px;
+    margin-bottom: 24px;
+}
+
+.carousel__title{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    display: inline;
+    margin-right: 11px;
+}
+
+.section--title{
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.sub--title{
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.benefit__text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
 }

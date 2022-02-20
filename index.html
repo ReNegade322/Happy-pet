@@ -11,42 +11,118 @@
 
 
     <!-- Header -->
-    <header class="header--row">
-        <img src="assets/icons/Logo.svg" alt="Happy Pet logo">
-
-        <div class="navigation">
-            <a class="link header__navigation" href="">Главная</a>
-            <a class="link header__navigation" href="">Друзья</a>
-            <a class="link header__navigation" href="">О сервисе</a>
-            <a class="link header__navigation" href="">Контакты</a>
-        </div>
-        
-        <div>
-            <img src="assets/icons/phone--icon.svg" alt="">
-            <p class="phone--number">+7 968 658-23-76</p>
-        </div>
-
-        <div class="cart">
-            <img class="cart--icon" src="assets/icons/cart--icon.svg" alt="">
-            <p class="navigation__text count">9 765 р.</p>
-            <img src="./assets/icons/header__dropdown--icon.svg" alt="">
+    <header class="header">
+        <div class="header--row">
+            <img src="assets/icons/Logo.svg" alt="Happy Pet logo">
+    
+            <div class="navigation">
+                <a class="link header__navigation" href="">Главная</a>
+                <a class="link header__navigation" href="">Друзья</a>
+                <a class="link header__navigation" href="">О сервисе</a>
+                <a class="link header__navigation" href="">Контакты</a>
+            </div>
+            
+            <div>
+                <img src="assets/icons/phone--icon.svg" alt="">
+                <p class="phone--number">+7 968 658-23-76</p>
+            </div>
+    
+            <div class="cart">
+                <img class="cart--icon" src="assets/icons/cart--icon.svg" alt="">
+                <p class="navigation__text count">9 765 р.</p>
+                <img src="./assets/icons/header__dropdown--icon.svg" alt="">
+            </div>
         </div>
     </header>
+  
 
     <main>
         <!-- Hero Screen -->
         <div class="hero-screen">
+            <div class="hero-screen__content">
+                <h1 class="hero__title">Твой новый друг <br> с доставкой на дом</h1>
+                <p class="hero__description">Онлайн-магазин домашних животных подарит тебе нового друга в несколько кликов. Действуй!</p>
+                <button class="main--cta">
+                    Посмотреть друзей
+                </button>
+
+                <img class="hero__img" src="assets/img/Hero__img.png" alt="">
+            </div>
             
         </div>
 
+        <!-- Categories slider -->
+        <section class="hero__carousel">
+            <img class="carousel__arrow" src="./assets/icons/slider__arrow--left.svg" alt="">
+            <div class="carousel__card">
+                <div>
+                    <p class="carousel__title">Собаки</p>
+                    <img class="carousel__img" src="./assets/icons/categories__arrow.svg" alt="">    
+                </div>
+                
+                <img src="./assets/img/categories--dogs.png" alt="">
+            </div>
+
+            <div class="carousel__card">
+                <div>
+                    <p class="carousel__title">Птицы</p>
+                    <img class="carousel__img" src="./assets/icons/categories__arrow.svg" alt="">    
+                </div>
+ 
+                <img src="./assets/img/categories--birds.png" alt="">
+            </div>
+            <img class="carousel__arrow" src="./assets/icons/slider__arrow--right.svg" alt="">
+        </section>
+
+        <section class="advantages">
+            <h2 class="section--title">Почему выбирают <br> наших друзей</h2>
+            <div class="benefits--row">
+                <div class="benefit"> 
+                    <img class="benefit__icon" src="./assets/icons/advantages__icon--dog.svg" alt="">
+                    <div class="benefit__description">
+                        <h3 class="sub--title">Их много</h3>
+                        <p class="benefit__text">Огромный выбор животных, птиц и питомцев</p>
+                    </div>
+                </div>
+    
+                <div class="benefit"> 
+                    <img class="benefit__icon" src="./assets/icons/advantages__icon--medicine.svg" alt="">
+                    <div class="benefit__description">
+                        <h3 class="sub--title">Они здоровы</h3>
+                        <p class="benefit__text">Мы заботимся о каждом питомце, который с нами</p>    
+                    </div>
+                </div>
+    
+                <div class="benefit"> 
+                    <img class="benefit__icon" src="./assets/icons/advantages__icon--handshake.svg" alt="">
+
+                    <div class="benefit__description">
+                        <h3 class="sub--title">Их любят</h3>
+                        <p class="benefit__text">Мы окружаем любовью и вниманием наших друзей</p>    
+                    </div>
+                </div>
+            </div>
+           
+        </section>
+
+        <!-- Catalogue -->
+        <section class="catalogue">
+            <h2 class="section--title">Каталог животных</h2>
+
+        </section>
 
 
 
 
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        <div class="footer_content">
+            <img src="./assets/icons/Logo.svg" alt="">
+            <p>2020 © Все права защищены</p>
+            <img src="assets/icons/phone--icon.svg" alt="">
+            <p class="phone--number">+7 968 658-23-76</p>
+        </div>
     </footer>
 </body>
 </html>

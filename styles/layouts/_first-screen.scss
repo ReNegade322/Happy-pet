@@ -2,6 +2,56 @@
     background: linear-gradient(124.13deg, #F4CB38 10.97%, #F4A938 77.98%);
     width: 100%;
     height: 900px;
+    position: relative;
+}
+
+.hero-screen__content{
+    margin: 0 auto;
+    max-width: 1170px;
+    width: 100%;
+}
+
+.hero__img{
     position: absolute;
-    top: 0;
+    bottom: 0;
+    right: 5%;
+    max-width: 1334px;
+    max-height: 870px;
+    width: 100%;
+    height: 100%;
+}
+
+.advantages{
+    margin: 0 auto;
+    max-width: 1170px;
+    width: 100%;
+
+    .benefits--row{
+        margin-top: 72px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+.benefit__icon{
+    padding: 20px;
+    background: #DAFFE0;
+    border-radius: 25px;
+
+}
+
+.benefit{
+    max-width: 370px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.benefit__description{
+    margin-left: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
