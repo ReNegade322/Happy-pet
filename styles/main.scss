@@ -1,0 +1,18 @@
+@import 'styles/abstracts/_variables.scss';
+@import 'styles/abstracts/_placeholders.scss';
+@import 'styles/abstracts/_mixins.scss';
+@import 'styles/abstracts/_functions.scss';
+
+@import 'styles/base/_base.scss';
+@import 'styles/base/_reset.scss';
+@import 'styles/base/_typography.scss';
+
+@import 'styles/components/_buttons.scss';
+@import 'styles/components/_carousel.scss';
+@import 'styles/components/_cover.scss';
+@import 'styles/components/_dropdown.scss';
+
+@import 'styles/layouts/_footer.scss';
+@import 'styles/layouts/_forms.scss';
+@import 'styles/layouts/_header.scss';
+@import 'styles/layouts/_navigation.scss';
