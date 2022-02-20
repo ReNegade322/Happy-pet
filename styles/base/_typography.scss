@@ -1,1 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+
+// Header
+
+.link{
+    text-decoration: none;
+}
+
+
+.navigation__text{
+    font-size: 15px;
+    font-weight: 400;
+    display: inline;
+}
+
+.phone--number{
+    font-size: 15px;
+    font-weight: 700;
+    display: inline;
+    margin-left: 12px;
+}
+
+.count{
+    margin: 0 4px 0 12px;
+}
+
+.header__navigation{
+    font-size: 15px;
+    font-weight: 400;
+}
