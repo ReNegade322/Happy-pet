@@ -1,0 +1,9 @@
+.form--section{
+    background-color: black;
+    padding: 135px 0 172px;
+    margin-top: 145px;
+
+    .form{
+        @extend %container;
+    }
+}

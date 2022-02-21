@@ -6,9 +6,7 @@
 }
 
 .hero-screen__content{
-    margin: 0 auto;
-    max-width: 1170px;
-    width: 100%;
+    @extend %container;
 }
 
 .hero__img{
@@ -22,9 +20,7 @@
 }
 
 .advantages{
-    margin: 0 auto;
-    max-width: 1170px;
-    width: 100%;
+    @extend %container;
 
     .benefits--row{
         margin-top: 72px;

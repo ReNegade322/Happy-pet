@@ -72,3 +72,64 @@
     font-size: 16px;
     line-height: 20px;
 }
+
+
+
+
+// Catalogue
+
+.catalogue__card--title{
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 23px;
+    margin-bottom: 15px;
+}
+
+.catalogue__card--description{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 25px;
+    max-width: 274px;
+    width: 100%;
+}
+
+.catalogue__card--cost{
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 700;
+    color: #32B71D;
+
+}
+
+.tag{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 138%;
+}
+
+.catalogue__card--stat {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+}
+
+.stat--descript{
+    display: inline;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.about-us__description{
+    max-width: 443px; 
+    width: 100%;
+    margin: 27px 0 28px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.form__text{
+    color: white;
+}
