@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,19 +57,19 @@
             <div class="carousel__card">
                 <div>
                     <p class="carousel__title">Собаки</p>
-                    <img class="carousel__img" src="./assets/icons/categories__arrow.svg" alt="">    
+                    <img  src="./assets/icons/categories__arrow.svg" alt="">    
                 </div>
                 
-                <img src="./assets/img/categories--dogs.png" alt="">
+                <img class="carousel__img" src="./assets/img/categories--dogs.png" alt="">
             </div>
 
             <div class="carousel__card">
                 <div>
                     <p class="carousel__title">Птицы</p>
-                    <img class="carousel__img" src="./assets/icons/categories__arrow.svg" alt="">    
+                    <img src="./assets/icons/categories__arrow.svg" alt="">    
                 </div>
  
-                <img src="./assets/img/categories--birds.png" alt="">
+                <img class="carousel__img" src="./assets/img/categories--birds.png" alt="">
             </div>
             <img class="carousel__arrow" src="./assets/icons/slider__arrow--right.svg" alt="">
         </section>
@@ -111,12 +111,29 @@
                 <h2 class="section--title">Каталог животных</h2>
 
                 <div class="catalogue__tab">
-                    <button class="check--btn">Все</button>
-                    <button class="check--btn">Собаки</button>
-                    <button class="check--btn">Кошки</button>
-                    <button class="check--btn">Попугаи</button>
-                    <button class="check--btn">Хомяки</button>
-                    <button class="check--btn">Обезьяны</button>    
+                    <label class="check--btn">
+                        <input class="catalogue__checkbox" type="checkbox">Все
+                    </label>
+
+                    <label class="check--btn">
+                        <input class="catalogue__checkbox" type="checkbox">Собаки
+                    </label>
+
+                    <label class="check--btn">
+                        <input class="catalogue__checkbox" type="checkbox">Кошки
+                    </label>
+
+                    <label class="check--btn">
+                        <input class="catalogue__checkbox" type="checkbox">Попугаи
+                    </label>
+
+                    <label class="check--btn">
+                        <input class="catalogue__checkbox" type="checkbox">Хомяки
+                    </label>
+
+                    <label class="check--btn">
+                        <input class="catalogue__checkbox" type="checkbox">Обезьяны
+                    </label>
                 </div>
             </div>
  
@@ -256,42 +273,78 @@
 
         <section class="about-us--section">
             <h2 class="section--title">О питомнике Happy Pet</h2>
+            <div class="about--content">
+                <div class="sub--section">
+                    <h3 class="sub--title">Мы - команда мечтателей</h3>
+                    <p class="about-us__description">
+                    Нашей главной специализацией является производство клематисов. В нашей коллекции имеется более 450 видов и сортов клематиса, но для коммерческих целей мы производим только немногим более 280 экземпляров клематиса Ломоноса – клематисы с большим и маленьким цветком, а также стелющиеся формы клематиса в широком диапазоне.
+    
+                    У нас также есть дополнительная специальность вьющиеся растения которые могут расти в саду в польских климатических условиях; мы производим более сотни видов и сортов таких растений.
+                    </p>
+                    <div>
+                        <a href="">Читать больше →</a>
+                    </div>
+                </div>
+                <img class="about-us__img" src="assets/img/about--img-main.png" alt="">
+            </div>    
             
-            <div class="sub--section">
-                <h3 class="sub--title">Мы - команда мечтателей</h3>
-                <p class="about-us__description">
-                Нашей главной специализацией является производство клематисов. В нашей коллекции имеется более 450 видов и сортов клематиса, но для коммерческих целей мы производим только немногим более 280 экземпляров клематиса Ломоноса – клематисы с большим и маленьким цветком, а также стелющиеся формы клематиса в широком диапазоне.
-
-                У нас также есть дополнительная специальность вьющиеся растения которые могут расти в саду в польских климатических условиях; мы производим более сотни видов и сортов таких растений.
-            </p>
-            </div>
-            
-
-            <div>
-                <a href="">Читать больше →</a>
-            </div>
         </section>
-
+        
         <section class="form--section">
-            <div class="form">
-                <h2 class="section--title form__text">Есть вопросы? Задавайте!</h2>
-
-                <input type="name" placeholder="Введите имя" required>
-                <input type="email" placeholder="Введите эл. почту" required>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                <input type="text">
-
+            <div class="form__content">
+                <h2 class="section--title white">Есть вопросы? Задавайте!</h2>
+                <div class="form">
+                    <div class="form__row">
+                        <input class="form__input" type="name" placeholder="Введите имя" required>
+                        <input class="form__input" type="email" placeholder="Введите эл. почту" required>
+                    </div>
+                    
+                    <div class="form__row">
+                        <input class="form__input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Введите телефон" required>
+                    
+                        <select class="form__input dropdown__text" name="questions" id="questions">
+                            <option class="dropdown__text" value="" disabled selected>Тема вопроса</option> 
+                            <option class="dropdown__text" value="1">Сколько</option>
+                            <option class="dropdown__text" value="2">Ты</option>
+                            <option class="dropdown__text" value="3">Зарабатываешь</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form__last-row">
+                        <label class="form__text message--input">
+                            Введите сообщение
+                            <input class="textarea" type="textarea">
+                        </label>
+                        
+                        <button class="form__btn">
+                            <img src="./assets/icons/form__arrow.svg" alt="">
+                        </button>
+                    </div>
+                   
+                    <div class="form__checkboxes">
+                        <label class="bottom--checkbox">
+                            <input class="checkbox" type="checkbox">
+                            Я согласен на обработку моих <a class="chk--link" href="">персональных данных</a> 
+                        </label>
+    
+                        <label class="bottom--checkbox">
+                            <input class="checkbox" type="checkbox">
+                            Я согласен с <a class="chk--link" href="">политикой конфиденциальности</a> 
+                        </label>
+                    </div>
+                </div>
             </div>
-
         </section>
     </main>
 
     <footer class="footer">
         <div class="footer_content">
             <img src="./assets/icons/Logo.svg" alt="">
-            <p>2020 © Все права защищены</p>
-            <img src="assets/icons/phone--icon.svg" alt="">
-            <p class="phone--number">+7 968 658-23-76</p>
+            <p class="white">2020 © Все права защищены</p>
+            <div>
+                <img class="white" src="assets/icons/phone--icon.svg" alt="">
+                <p class="white phone--number">+7 968 658-23-76</p>
+            </div>
         </div>
     </footer>
 </body>

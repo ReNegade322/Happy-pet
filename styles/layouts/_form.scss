@@ -3,7 +3,83 @@
     padding: 135px 0 172px;
     margin-top: 145px;
 
-    .form{
+    .form__content{
         @extend %container;
+
+        .form{
+            margin-top: 79px;
+
+            .form__input{
+                background-color: transparent;
+                color: white;
+                border: none;
+                border-bottom: 1px solid white;
+                padding-bottom: 19px;
+                margin-right: 31px;
+                margin-bottom: 50px;
+                max-width: 370px;
+                width: 100%;
+            }
+        }
     }
+}
+
+.form__row{
+    display: flex;
+}
+
+.message--input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.textarea{
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 19px;
+    margin-right: 31px;
+    max-width: 770px;
+    width: 100%;
+    margin-right: 45px;
+}
+
+.form__last-row{
+    display: flex;
+    flex-direction: row;
+    max-width: 863px;
+    width: 100%;
+    align-items:flex-end;
+}
+
+.form__checkboxes{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom--checkbox{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #999999;
+    margin-bottom: 15px;
+}
+
+.checkbox{
+    margin: 0 16px 0 0;
+    border: 1px solid #999999;
+    background-color: black;
+}
+
+.chk--link{
+    color: #999999;
+}
+
+.form--section{
+    background-image: url(../assets/img/footer--dog.png);
+    background-repeat: no-repeat;
+    background-position:100%;
 }

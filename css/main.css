@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
-.hero-screen__content, .advantages, .header--row, .catalogue__card--row, .tile--section, .about-us--section, .form--section .form {
+.footer .footer_content, .hero-screen__content, .advantages, .header--row, .catalogue__card--row, .tile--section, .about-us--section, .form--section .form__content {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto; }
@@ -151,7 +151,24 @@ table {
   line-height: 24px; }
 
 .form__text {
-  color: white; }
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px; }
+
+.form__input::placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px; }
+
+.dropdown__text {
+  -webkit-appearance: none;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700; }
+
+.white {
+  filter: brightness(0) invert(1); }
 
 .cart--icon {
   padding: 12px 13px 11px 10px;
@@ -167,7 +184,8 @@ table {
   font-size: 17px;
   font-weight: 700;
   line-height: 21px;
-  border: none; }
+  border: none;
+  z-index: 1; }
 
 .carousel__arrow {
   height: fit-content;
@@ -188,7 +206,32 @@ table {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 20px; }
+  line-height: 20px;
+  cursor: pointer; }
+
+.catalogue__checkbox {
+  overflow: hidden;
+  display: none;
+  color: #fff !important; }
+
+.form__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50px;
+  width: 48px;
+  height: 48px;
+  background: #F52456;
+  box-shadow: 0px 5px 20px rgba(245, 36, 86, 0.56); }
+
+.check--btn:hover {
+  background-color: #ff557c;
+  color: white;
+  border: 1px solid transparent; }
+
+.catalogue__checkbox:checked {
+  background-color: #F52456; }
 
 .hero__carousel {
   max-width: 1170px;
@@ -201,16 +244,33 @@ table {
   top: -154px; }
 
 .carousel__card {
+  box-sizing: border-box;
   max-width: 220px;
   width: 100%;
+  max-height: 208px;
+  height: 100%;
   background-color: white;
   padding: 29px 21px;
   box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
   border-radius: 16px;
-  margin: 0 15px; }
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.carousel__img {
+  max-width: 164px;
+  max-height: 119px;
+  margin: 23px auto 0;
+  object-fit: cover;
+  object-position: 100% 0; }
 
 .footer {
   background-color: black; }
+  .footer .footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
 
 .hero-screen {
   background: linear-gradient(124.13deg, #F4CB38 10.97%, #F4A938 77.98%);
@@ -221,7 +281,7 @@ table {
 .hero__img {
   position: absolute;
   bottom: 0;
-  right: 5%;
+  right: 0;
   max-width: 1334px;
   max-height: 870px;
   width: 100%;
@@ -361,10 +421,83 @@ table {
       margin-bottom: 30px;
       box-shadow: 0px 4px 27px 0px rgba(34, 60, 80, 0.2); }
 
-.about-us--section .sub--section {
-  margin-top: 65px; }
+.about-us--section .about--content {
+  display: flex;
+  justify-content: space-between; }
+  .about-us--section .about--content .sub--section {
+    margin-top: 65px; }
+
+.about-us__img {
+  max-width: 670px;
+  width: 100%;
+  max-height: 394px;
+  height: 100%;
+  margin-top: 125px; }
 
 .form--section {
   background-color: black;
   padding: 135px 0 172px;
   margin-top: 145px; }
+  .form--section .form__content .form {
+    margin-top: 79px; }
+    .form--section .form__content .form .form__input {
+      background-color: transparent;
+      color: white;
+      border: none;
+      border-bottom: 1px solid white;
+      padding-bottom: 19px;
+      margin-right: 31px;
+      margin-bottom: 50px;
+      max-width: 370px;
+      width: 100%; }
+
+.form__row {
+  display: flex; }
+
+.message--input {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+.textarea {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 19px;
+  margin-right: 31px;
+  max-width: 770px;
+  width: 100%;
+  margin-right: 45px; }
+
+.form__last-row {
+  display: flex;
+  flex-direction: row;
+  max-width: 863px;
+  width: 100%;
+  align-items: flex-end; }
+
+.form__checkboxes {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column; }
+
+.bottom--checkbox {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #999999;
+  margin-bottom: 15px; }
+
+.checkbox {
+  margin: 0 16px 0 0;
+  border: 1px solid #999999;
+  background-color: black; }
+
+.chk--link {
+  color: #999999; }
+
+.form--section {
+  background-image: url(../assets/img/footer--dog.png);
+  background-repeat: no-repeat;
+  background-position: 100%; }

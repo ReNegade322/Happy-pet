@@ -132,4 +132,25 @@
 
 .form__text{
     color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.form__input::placeholder{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.dropdown__text{
+    -webkit-appearance: none;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    
+}
+
+.white{
+    filter: brightness(0) invert(1);
 }
