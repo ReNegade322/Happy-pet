@@ -1,9 +1,7 @@
 
 // First section -- carousel
 .hero__carousel{
-    max-width: 1170px;
-    width: 100%;
-    margin: 0 auto;
+    @extend %container;
     display: flex;
     flex-direction: row;
     align-items: center;

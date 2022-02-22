@@ -23,3 +23,13 @@
 .header__navigation:not(:last-child){
     margin-right: 48px;
 }
+
+.header__menu{
+    display: none;
+    margin-left: 20px;
+}
+
+.header__right{
+    display: flex;
+    flex-direction: row;
+}

@@ -26,6 +26,7 @@
     margin: 0 15px;
     z-index: 2;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.13);
+    cursor: pointer;
 }
     
 .check--btn{
@@ -58,6 +59,7 @@
     height: 48px;
     background: #F52456;
     box-shadow: 0px 5px 20px rgba(245, 36, 86, 0.56);
+    cursor: pointer;
 }
 
 
@@ -69,4 +71,8 @@
 
 .catalogue__checkbox:checked{
     background-color: #F52456;
+}
+
+.footer__arrow--up{
+    cursor: pointer;
 }

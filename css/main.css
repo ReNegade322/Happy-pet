@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
-.footer .footer_content, .hero-screen__content, .advantages, .header--row, .catalogue__card--row, .tile--section, .about-us--section, .form--section .form__content {
+.hero__carousel, .footer .footer_content, .hero-screen__content, .advantages, .header--row, .catalogue__card--row, .catalogue__container, .tile--section, .tile--section .img--column--row, .about-us--section, .form--section .form__content {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto; }
@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1; }
+  line-height: 0; }
 
 ol, ul {
   list-style: none; }
@@ -81,7 +81,7 @@ table {
   width: 100%;
   font-size: 19px;
   line-height: 27px;
-  font-weight: 400px;
+  font-weight: 400;
   margin-bottom: 24px; }
 
 .carousel__title {
@@ -165,10 +165,21 @@ table {
   -webkit-appearance: none;
   font-size: 18px;
   line-height: 22px;
-  font-weight: 700; }
+  font-weight: 700;
+  background-color: black; }
+
+.abots-us__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F52456;
+  text-decoration: none; }
 
 .white {
   filter: brightness(0) invert(1); }
+
+.abots-us__link:hover {
+  text-decoration: underline; }
 
 .cart--icon {
   padding: 12px 13px 11px 10px;
@@ -194,7 +205,8 @@ table {
   padding: 10px 14px;
   margin: 0 15px;
   z-index: 2;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.13); }
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.13);
+  cursor: pointer; }
 
 .check--btn {
   background-color: #FBF6ED;
@@ -223,7 +235,8 @@ table {
   width: 48px;
   height: 48px;
   background: #F52456;
-  box-shadow: 0px 5px 20px rgba(245, 36, 86, 0.56); }
+  box-shadow: 0px 5px 20px rgba(245, 36, 86, 0.56);
+  cursor: pointer; }
 
 .check--btn:hover {
   background-color: #ff557c;
@@ -233,10 +246,10 @@ table {
 .catalogue__checkbox:checked {
   background-color: #F52456; }
 
+.footer__arrow--up {
+  cursor: pointer; }
+
 .hero__carousel {
-  max-width: 1170px;
-  width: 100%;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -266,7 +279,8 @@ table {
   object-position: 100% 0; }
 
 .footer {
-  background-color: black; }
+  background-color: black;
+  padding: 45px 0; }
   .footer .footer_content {
     display: flex;
     justify-content: space-between;
@@ -274,14 +288,17 @@ table {
 
 .hero-screen {
   background: linear-gradient(124.13deg, #F4CB38 10.97%, #F4A938 77.98%);
+  height: 900px; }
+
+.hero__bg--img {
+  background-image: url(../assets/img/Hero__img.png);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
   width: 100%;
   height: 900px;
   position: relative; }
 
 .hero__img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
   max-width: 1334px;
   max-height: 870px;
   width: 100%;
@@ -296,8 +313,16 @@ table {
 
 .benefit__icon {
   padding: 20px;
-  background: #DAFFE0;
   border-radius: 25px; }
+
+.green {
+  background: #DAFFE0; }
+
+.orange {
+  background: #FFF0DA; }
+
+.purple {
+  background: #F2DCFF; }
 
 .benefit {
   max-width: 370px;
@@ -331,6 +356,14 @@ table {
 
 .header__navigation:not(:last-child) {
   margin-right: 48px; }
+
+.header__menu {
+  display: none;
+  margin-left: 20px; }
+
+.header__right {
+  display: flex;
+  flex-direction: row; }
 
 .catalogue {
   background-color: #FBF6ED;
@@ -400,16 +433,9 @@ table {
   max-width: 1400px;
   width: 100%; }
 
-.catalogue__container {
-  max-width: 1170px;
-  width: 100%;
-  margin: 0 auto; }
-
 .tile--section .img--column--row {
   display: flex;
   justify-content: space-between;
-  max-width: 1170px;
-  width: 100%;
   margin: 57px auto; }
   .tile--section .img--column--row .img-column {
     display: flex;
@@ -427,12 +453,22 @@ table {
   .about-us--section .about--content .sub--section {
     margin-top: 65px; }
 
-.about-us__img {
-  max-width: 670px;
-  width: 100%;
-  max-height: 394px;
-  height: 100%;
-  margin-top: 125px; }
+.about-us__img--right {
+  width: fit-content;
+  display: inline;
+  position: relative; }
+  .about-us__img--right .about-us__img {
+    display: inline;
+    max-width: 670px;
+    width: 100%;
+    max-height: 394px;
+    height: 100%;
+    margin-top: 125px; }
+
+.tile__img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  filter: drop-shadow(0px 8px 40px rgba(25, 94, 95, 0.46)); }
 
 .form--section {
   background-color: black;
@@ -501,3 +537,133 @@ table {
   background-image: url(../assets/img/footer--dog.png);
   background-repeat: no-repeat;
   background-position: 100%; }
+
+@media (max-width: 1869px) {
+  .hero__bg--img {
+    background-size: 70%; } }
+
+@media (max-width: 1170px) {
+  .hero__carousel, .footer .footer_content, .hero-screen__content, .advantages, .header--row, .catalogue__card--row, .catalogue__container, .tile--section, .tile--section .img--column--row, .about-us--section, .form--section .form__content {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto; }
+  .header--row {
+    margin-top: 40px; }
+  .header__menu {
+    display: block; }
+  .navigation {
+    display: none; }
+  .call {
+    display: none; }
+  .hero__bg--img {
+    background-image: none; }
+  .advantages .benefits--row {
+    flex-direction: column; }
+    .advantages .benefits--row .benefit {
+      margin-bottom: 30px; }
+  .carousel {
+    width: fit-content;
+    max-width: 100%; }
+    .carousel .catalogue__card {
+      margin: 0 15px; }
+  .catalogue__card:last-child {
+    display: none; }
+  .img-column {
+    min-width: 290px;
+    margin-right: 30px;
+    margin-top: 57px; }
+  .img-column:last-child {
+    display: none !important; }
+  .tile__img {
+    box-sizing: border-box; }
+  .about-us__img--right {
+    display: none; }
+  .catalogue__tab {
+    display: flex;
+    flex-wrap: wrap; }
+    .catalogue__tab .check--btn {
+      padding: 10px 22px;
+      margin-right: 10px; }
+  .form--section {
+    background-image: none; }
+  .footer__arrow--up {
+    display: none; }
+  .footer__content {
+    flex-wrap: wrap; }
+  .form__row {
+    flex-direction: column; }
+  .form__last-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+  .textarea {
+    margin: 0 0 40px; } }
+
+@media (max-width: 824px) {
+  .hero__carousel, .footer .footer_content, .hero-screen__content, .advantages, .header--row, .catalogue__card--row, .catalogue__container, .tile--section, .tile--section .img--column--row, .about-us--section, .form--section .form__content {
+    max-width: 90%;
+    margin: 0 40px; }
+  .header--row {
+    margin-top: 20px; }
+  .cart {
+    display: none; }
+  .carousel .carousel__arrow {
+    display: none; }
+  .catalogue__card--row {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100% !important; }
+    .catalogue__card--row .catalogue__card {
+      padding: 15px 15px 25px !important;
+      margin: 0 6px; }
+      .catalogue__card--row .catalogue__card .catalogue__card--head {
+        display: none; }
+      .catalogue__card--row .catalogue__card .catalogue__card--img {
+        width: 100%; }
+      .catalogue__card--row .catalogue__card .tags--list {
+        display: flex;
+        flex-direction: column; }
+  .img-column {
+    width: 100%;
+    min-width: 100px; }
+  .img--column--row {
+    max-width: 100% !important;
+    margin: 0 !important;
+    width: 100%; }
+  .footer_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important; }
+  .check--btn {
+    font-size: 14px;
+    padding: 8px 16px !important; }
+  .footer__copy {
+    margin: 20px 0; }
+  .footer__phone {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; }
+  .form--section {
+    padding-bottom: 120px; }
+  .carousel__card {
+    margin: 0 8px; } }
+
+@media (max-width: 485px) {
+  .hero__carousel, .footer .footer_content, .hero-screen__content, .advantages, .header--row, .catalogue__card--row, .catalogue__container, .tile--section, .tile--section .img--column--row, .about-us--section, .form--section .form__content {
+    margin: 0 15px; }
+  .header--row {
+    margin-top: 20px; }
+  .carousel__img {
+    display: none; }
+  .carousel__card {
+    width: fit-content;
+    padding: 15px 30px;
+    margin: 0 8px 0 0; }
+  .card__head {
+    display: flex;
+    flex-direction: row; }
+  .hero__carousel {
+    display: flex;
+    justify-content: flex-start; }
+  .carousel__arrow {
+    display: none; } }
