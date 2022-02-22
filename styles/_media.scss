@@ -52,6 +52,10 @@
         display: none;
     }
 
+    .img--column--row{
+        margin: 0 auto 57px !important;
+    }
+
     .img-column{
         min-width: 290px;
         margin-right: 30px;
@@ -128,6 +132,9 @@
         }
     }
 
+    .section--title{
+        margin-top: 40px;
+    }
    
     .catalogue__card--row{
         margin: 0 auto;
@@ -202,7 +209,7 @@
     .header--row{
         margin-top: 20px;
     }
-    
+
     .carousel__img{
         display: none;
     }

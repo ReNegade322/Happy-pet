@@ -141,6 +141,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
+    color: white;
 }
 
 .dropdown__text{
@@ -148,7 +149,12 @@
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
-    background-color: black;
+    // background-color: black;
+    background: black url("../assets/icons/footer__dropdown--icon.svg") no-repeat 100%;
+    background-position: right 0 bottom 24px;
+
+
+
 }
 
 .abots-us__link{

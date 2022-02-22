@@ -19,6 +19,9 @@
                 margin-bottom: 50px;
                 max-width: 370px;
                 width: 100%;
+
+
+                outline: 0;
             }
         }
     }
@@ -44,6 +47,9 @@
     max-width: 770px;
     width: 100%;
     margin-right: 45px;
+    margin-top: 94px;
+    outline: 0;
+    
 }
 
 .form__last-row{
@@ -66,6 +72,8 @@
     line-height: 17px;
     color: #999999;
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .checkbox{
