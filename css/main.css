@@ -475,7 +475,6 @@ table {
   filter: drop-shadow(0px 8px 40px rgba(25, 94, 95, 0.46)); }
 
 .form--section {
-  background-color: black;
   padding: 135px 0 172px;
   margin-top: 145px; }
   .form--section .form__content .form {
@@ -545,7 +544,14 @@ table {
 .form--section {
   background-image: url(../assets/img/footer--dog.png);
   background-repeat: no-repeat;
-  background-position: 100%; }
+  background-position: 104%; }
+
+.footer__bg--circle {
+  background-color: black;
+  height: 100%;
+  background-image: url(../assets/img/form__bg.png);
+  background-repeat: no-repeat;
+  background-position: 40% 50%; }
 
 @media (max-width: 1869px) {
   .hero__bg--img {

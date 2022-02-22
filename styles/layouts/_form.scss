@@ -1,5 +1,4 @@
 .form--section{
-    background-color: black;
     padding: 135px 0 172px;
     margin-top: 145px;
 
@@ -89,6 +88,15 @@
 .form--section{
     background-image: url(../assets/img/footer--dog.png);
     background-repeat: no-repeat;
-    background-position:100%;
+    background-position:104%;
 
+}
+
+
+.footer__bg--circle{
+    background-color: black;
+    height: 100%;
+    background-image: url(../assets/img/form__bg.png);
+    background-repeat: no-repeat;
+    background-position:40% 50%;
 }
