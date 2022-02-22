@@ -168,7 +168,8 @@ table {
   line-height: 22px;
   font-weight: 700;
   background: black url("../assets/icons/footer__dropdown--icon.svg") no-repeat 100%;
-  background-position: right 0 bottom 24px; }
+  background-position: right 0 bottom 24px;
+  cursor: pointer; }
 
 .abots-us__link {
   font-weight: 500;
