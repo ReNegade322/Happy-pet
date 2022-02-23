@@ -15,8 +15,17 @@
     font-weight: 700;
     line-height: 21px;
     border: none;
-    z-index: 1;
+    outline: none;
+    background-color: #F52557;
 }
+
+.main--cta:hover{
+    background: #fa537a;
+    transition: background-color ease-in-out 0.15s;
+}
+
+
+
 
 .carousel__arrow{
     height: fit-content;
@@ -29,24 +38,8 @@
     cursor: pointer;
 }
     
-.check--btn{
-    background-color: #FBF6ED;
-    color: #777777;
-    padding: 16px 50px;
-    border-radius: 50px;
-    border: 1px solid #A9A9A9;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+.footer__arrow--up{
     cursor: pointer;
-}
-
-.catalogue__checkbox{
-    overflow: hidden;
-    display: none;
-    color: #fff !important;
 }
 
 .form__btn{
@@ -63,17 +56,45 @@
     flex-shrink: 0;
 }
 
+.catalogue__checkbox{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    margin: 0;
+}
 
-.check--btn:hover{
-    background-color: #ff557c;
-    color: white;
+.catalogue__check--description{
+    user-select: none; 
+
+
+    margin: 0 20px 0 0;
+    width: fit-content;
+    position: relative;
+    color: #777777;
+    padding: 26px 50px;
+    border-radius: 50px;
+    border: 1px solid #A9A9A9;
+}   
+    
+.check--btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}   
+    
+
+
+.catalogue__check--description:hover{
+    background-color: #fa537a;
     border: 1px solid transparent;
+    transition: background-color ease-in-out 0.2s;
+    color: white;
 }
 
-.catalogue__checkbox:checked{
-    background-color: #F52456;
-}
-
-.footer__arrow--up{
-    cursor: pointer;
-}
+.catalogue__checkbox:checked + .catalogue__check--description{
+    background: #F52456;
+    border: 1px solid transparent;
+    color: white;
+    font-weight: 700;
+} 

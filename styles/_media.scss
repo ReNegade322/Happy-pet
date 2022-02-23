@@ -39,6 +39,9 @@
         }
     }
 
+    .b{
+        margin: 0 20px 10px 0;
+    }
     .carousel {
         width: fit-content;
         max-width: 100%;
@@ -77,11 +80,6 @@
     .catalogue__tab{
         display: flex;
         flex-wrap: wrap;
-        
-        .check--btn {
-            padding: 10px 22px;
-            margin-right: 10px;
-        }
     }
 
     .form--section {
@@ -176,12 +174,6 @@
         align-items: flex-start !important;
     }
 
-    .check--btn{
-        font-size: 14px;
-        padding: 8px 16px !important;
-    }
-
-    
     .footer__copy{
         margin: 20px 0;
     }

@@ -4,10 +4,15 @@
     margin: 107px 0;
 }
 
+.catalogue__tab{
+    display: flex;
+}
+
+
 .catalogue__card--head{
     display: flex;
     justify-content: space-between;
-
+    pointer-events: none;
     .card__head--left{
         display: flex;
 
@@ -42,6 +47,8 @@
 .catalogue__card--img{
     display: block;
     margin: 26px auto;
+    pointer-events: none;
+    user-select: none;
 }
 
 .catalogue__card--metric{

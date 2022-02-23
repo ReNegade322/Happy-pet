@@ -30,6 +30,11 @@
     color: black;
 }
 
+.header__navigation:hover{
+    text-decoration: underline;
+    // font-weight: 700;
+}
+
 .hero__title{
     padding-top: 283px;
     font-weight: 900;
@@ -149,7 +154,6 @@
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
-    // background-color: black;
     background: black url("../assets/icons/footer__dropdown--icon.svg") no-repeat 100%;
     background-position: right 0 bottom 24px;
     cursor: pointer;

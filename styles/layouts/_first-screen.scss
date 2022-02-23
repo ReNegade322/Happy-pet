@@ -40,6 +40,8 @@
 .benefit__icon{
     padding: 20px;
     border-radius: 25px;
+    user-select: none;
+    pointer-events: none;
 }
 
 .green{
