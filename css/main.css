@@ -244,7 +244,6 @@ table {
 
 .catalogue__check--description {
   user-select: none;
-  margin: 0 20px 0 0;
   width: fit-content;
   position: relative;
   color: #777777;
@@ -255,7 +254,8 @@ table {
 .check--btn {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-right: 20px; }
 
 .catalogue__check--description:hover {
   background-color: #fa537a;
@@ -600,7 +600,7 @@ table {
     flex-direction: column; }
     .advantages .benefits--row .benefit {
       margin-bottom: 30px; }
-  .b {
+  .check--btn {
     margin: 0 20px 10px 0; }
   .carousel {
     width: fit-content;
@@ -685,7 +685,9 @@ table {
   .form--section {
     padding-bottom: 120px; }
   .carousel__card {
-    margin: 0 8px; } }
+    margin: 0 8px; }
+  .catalogue__check--description {
+    padding: 18px 25px; } }
 
 @media (max-width: 485px) {
   .hero__carousel, .footer .footer_content, .hero-screen__content, .advantages, .header--row, .catalogue__card--row, .catalogue__container, .tile--section, .tile--section .img--column--row, .about-us--section, .form--section .form__content {
@@ -706,3 +708,8 @@ table {
     justify-content: flex-start; }
   .carousel__arrow {
     display: none; } }
+
+@media (max-width: 323px) {
+  .catalogue__tab {
+    flex-direction: column;
+    align-items: flex-start; } }

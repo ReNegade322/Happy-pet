@@ -39,7 +39,7 @@
         }
     }
 
-    .b{
+    .check--btn{
         margin: 0 20px 10px 0;
     }
     .carousel {
@@ -191,6 +191,10 @@
     .carousel__card{
         margin: 0 8px;
     }
+
+    .catalogue__check--description{
+        padding: 18px 25px;
+    }
 }
 
 @media (max-width: 485px) {
@@ -224,5 +228,12 @@
 
     .carousel__arrow{
         display: none;
+    }
+}
+
+@media (max-width: 323px) {
+    .catalogue__tab{
+        flex-direction: column;
+        align-items: flex-start;
     }
 }

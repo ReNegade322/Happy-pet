@@ -66,9 +66,6 @@
 
 .catalogue__check--description{
     user-select: none; 
-
-
-    margin: 0 20px 0 0;
     width: fit-content;
     position: relative;
     color: #777777;
@@ -80,7 +77,8 @@
 .check--btn{
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;  
+    margin-right: 20px;
 }   
     
 
