@@ -63,10 +63,6 @@
 .tags--list{
     display: flex;
 
-    .tag{
-        margin-right: 16px;
-    }
-
     .tag:nth-child(odd) {
         color: #ff6000;
     }

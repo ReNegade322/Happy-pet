@@ -105,6 +105,7 @@
     }
 
     .textarea{
+        max-width: 370px;
         margin: 0 0 40px;
     }
 }
@@ -139,7 +140,7 @@
         max-width: 100%;
         width: 100% !important;
         .catalogue__card{
-            padding: 15px 15px 25px !important; 
+            padding: 15px 15px 25px; 
             margin: 0 6px;
     
             .catalogue__card--head {
@@ -195,6 +196,14 @@
     .catalogue__check--description{
         padding: 18px 25px;
     }
+
+    .check--btn{
+        margin: 0 10px 10px 0;
+    }
+
+    .tag{
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 485px) {
@@ -207,15 +216,27 @@
     }
 
     .carousel__img{
-        display: none;
+        max-width: 110px; 
+        width: 100%;
+        max-height: 119px;
+        height: 100%; 
+        object-fit: cover;
     }
 
     .carousel__card{
         width: fit-content;
-        padding: 15px 30px;
-        margin: 0 8px 0 0;
+        padding: 8px 8px 16px;
     }
 
+    .catalogue__card--row{
+        margin: 0 6px;
+    }
+
+    .catalogue__card{
+        margin: 4px !important;
+        padding: 8px 12px 16px !important;
+    }
+    
     .card__head{
         display: flex;
         flex-direction: row;
@@ -228,6 +249,40 @@
 
     .carousel__arrow{
         display: none;
+    }
+
+    .catalogue__card--img{
+        margin: 18px auto;
+    }
+
+    .catalogue__card--title{
+        font-size: 16px;
+    }
+
+    .catalogue__card--description{
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .tag{
+        font-size: 10px;
+    }
+
+    .catalogue__card--bottom{
+        margin-top: 20px;
+        
+    }
+
+    .catalogue__card--cost{
+        font-size: 20px;
+    }
+
+    .img-column{
+        margin-right: 10px;
+    }
+
+    .tile__img{
+        margin-bottom: 10px !important;
     }
 }
 
