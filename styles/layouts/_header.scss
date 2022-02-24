@@ -6,8 +6,12 @@
     z-index: 1;
 }
 
+.logo{
+    margin-top: 14px;
+}
+
 .header--row{
-    margin-top: 40px;
+    margin-top: 26px;
     @extend %container;
     display: flex;
     flex-direction: row;
